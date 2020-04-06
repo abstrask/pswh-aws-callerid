@@ -1,4 +1,4 @@
-# pswh-aws-callerid
+# PowerShell Core AWS Get-STSCalleridentity
 
 Simple Docker image that will run AWS `Get-STSCallerIdentity` from Powershell Core.
 
