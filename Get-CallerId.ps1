@@ -1,6 +1,6 @@
-$ProgressPreference = 'SilentlyContinue'
+#Requires -Module @{ ModuleName = 'AWSPowerShell.NetCore'; ModuleVersion = '4.0.0' }
 
-Import-Module AWSPowerShell
+$ProgressPreference = 'SilentlyContinue'
 
 If ($env:AWS_DEFAULT_REGION) {
     Set-DefaultAWSRegion -Region $env:AWS_DEFAULT_REGION

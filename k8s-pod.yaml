@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: pwsh-aws-callerid
-      image: abstrask/pwsh-aws-callerid:v0.1
+      image: abstrask/pwsh-aws-callerid:v0.2
       command: ["pwsh", "-Command", "Start-Sleep 10000"]
       env:
         - name: AWS_DEFAULT_REGION
