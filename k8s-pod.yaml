@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-callerid
+  labels:
+    app: aws-callerid
+  annotations:
+    iam.amazonaws.com/role: CloudWatchLogsCollector
+spec:
+  containers:
+    - name: pwsh-aws-callerid
+      image: abstrask/pwsh-aws-callerid
+      command: ["pwsh", "-Command", "Start-Sleep 10000"]
+      env:
+        - name: AWS_DEFAULT_REGION
+          value: eu-west-1
+  restartPolicy: Never
